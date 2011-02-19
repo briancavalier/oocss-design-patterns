@@ -9,18 +9,19 @@
 		// Setup requirejs paths
 		(function(global) {
 			global.require = {
+				baseUrl: "./",
 				paths: {
-					'view': '../initial-state/view',
-					'data': '../initial-state/data'
+					'cssx': '../js/cssx',
+					'mustache': '../js/mustache',
+					'sizzle': '../js/sizzle'
 				}
 			}
 		})(window);
 	</script>
 	<script src="../js/requireplugins-jquery-1.4.4.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../js/mustache/mustache.js" type="text/javascript" charset="utf-8"></script>
 	
 	<script type="text/javascript">
-		require(['view/View', 'data/composers'], function(View, data) {
+		require(['jquery', 'view/View', 'data/composers'], function($, View, data) {
 
 			// Create the view.  It will render its initial state immediately.
 			// The view needs to receive some data, and so will start out in an initializing

@@ -1,6 +1,6 @@
 /*
 	AMD adapter for Mustache
 */
-define([], function() {
+define(['./mustache/mustache.js'], function() {
 	return Mustache.to_html;
 });

@@ -1,3 +1,6 @@
 [submodule "js/mustache"]
 	path = js/mustache
 	url = https://github.com/janl/mustache.js.git
+[submodule "js/sizzle"]
+	path = js/sizzle
+	url = github:jeresig/sizzle.git
